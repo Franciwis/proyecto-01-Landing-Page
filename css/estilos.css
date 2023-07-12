@@ -13,6 +13,8 @@ font-family: 'Roboto Slab', serif; */
 .header-contenedor{
     display: flex;
     background-color: #d1d1f9;
+    justify-content: space-between;
+    padding: 3rem;
    
     
   
@@ -32,24 +34,152 @@ nav{
     
 }
 .logo{
-    display:grid;
+    display:flex;
     width:100px;
+    
+    
+    
     
 }  
 .list-nav{
-    
+    display: flex;
+    list-style: none;
     gap: 10px;
-    text-align: center;
-    align-items: center;
+    /* text-align: center;
+    align-items: center; */
+    
     
 }
 a{
     
-}    
+}  
+.main-contenedor{
+    display: grid;
+    background-color:#d6fbe4;
+    grid-template-areas: 
+    "seccion1 seccion1"
+    "seccion2 seccion2"
+    "seccion3 seccion3"
+    "seccion4 aside1"
+    "seccion5 aside1"
+    "footer footer";
+    grid-template-columns:70% 1fr;
+    grid-template-rows: auto;
+}
+.seccion-1{
+    display: inline-block;
+    background-image: linear-gradient(rgba(206, 173, 158, 0.5), rgba(5, 5, 5, 0.5)), url("/image/backgraund1.jpg"); 
+    background-position:center 45%;
+    background-size: cover;
+    
+    height: 400px;
+    grid-area: seccion1;
+    
+    
+}
+.titulo1{
+    display: inline-block;
+    
+    width: 50%;
+    padding: 3rem;
+    font-family: 'Bacasime Antique', serif;
+    font-size: larger;
+    color: rgb(252, 252, 252);
+    align-items:baseline;
+    font-family: 'Handlee', cursive;
+    
+    
+}
+.titulo1 span{
+    font-family: 'Handlee', cursive;
+}
+.formulario1{
+    
+    
    
-   
+    
+}
+.contenedor-form1{   
+    display: inline-block;
+    
+    left: 16rem;
+    position: relative;
+    width: 30%;
+    bottom: 5rem;
 
+    
+}
+.contenedor-form1 h2{
+    color: #f9faf9;
+    font-family: 'Handlee', cursive;
+}
+form input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #b67b9bb4;
+    color: white;
+    
+    
+  }
+
+  .formulario1 ::placeholder{
+    color:white;
+}
+  
+  
+  form button[type="submit"] {
+    background-color: #ffdbdb;
+    color: rgb(99, 95, 95);
+    /* text-shadow:0px 0px 1px rgb(153, 128, 128); */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size:large;
+    font-family: 'Handlee', cursive;
+  }
+  
+  form button[type="submit"]:hover {
+    background-color: #e6b4b4;
+    
+
+  }
+
+  
+.seccion-2{
+    background-color: green;
+    grid-area: seccion2;
+}
+.seccion-3{
+    background-color:yellow;
+    grid-area: seccion3;
+}
+.seccion-4{
+    background-color:red;
+    grid-area: seccion4;
+}
+.seccion-5{
+    background-color: pink;
+    grid-area: seccion5;
+}
+.aside1{
+    background-color: blue;
+    grid-area: aside1;
+}
+.piepag{
+    background-color: darkmagenta;
+    grid-area: footer;
+}
      
+
+
+  
+  
+  
+  
     
     
    
