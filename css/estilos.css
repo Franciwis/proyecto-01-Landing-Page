@@ -7,52 +7,105 @@ font-family: 'Roboto Slab', serif; */
 *{
   padding: 0;
   margin: 0;  
-  text-decoration: none;
   box-sizing: border-box;
+
 }
+
+
+/* HEADER */
 .header-contenedor{
     display: flex;
-    background-color: #d1d1f9;
     justify-content: space-between;
-    padding: 3rem;
-   
-    
-  
- 
-  
+    background-color: #d1d1f9;
+    padding: 0 2%;
+     
 }
-nav{
-    display:grid;
-    width: 100%;
-    height: auto;
-    align-items:flex-start;
-    gap: 10px;
-   
+
+.contenedor-logo{
+    display:contents;
+
+}
+
+@media screen and (max-width: 590px){
     
+    .contenedor-logo{
+        display:flex;
+    
+    }
+}
 
 
-    
-}
 .logo{
     display:flex;
-    width:100px;
-    
-    
-    
+    padding: 0 1%;
+    justify-content:space-around;
     
 }  
-.list-nav{
+
+.logo img{
+    
+    width:50%;
+    height: 100%;
+    /* mejorar el logo */
+    
+}  
+
+
+.contenedor-nav{
     display: flex;
+    margin: 1%;
+    
+}
+
+.contenedor-nav nav{
+    padding: 2% 0%;
+    margin-rigth: 0%; /* revisar por que numero negativo */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    align-items: flex-end;
+    display: flex;
+   
+}
+
+
+
+.list-nav{
+    display: inline-flex;
     list-style: none;
-    gap: 10px;
+    gap: 30px;
     /* text-align: center;
     align-items: center; */
     
-    
 }
-a{
+
+.list-nav a{
     
-}  
+    text-decoration: none;
+    color: white;
+    font-size: 110%;
+    text-align: inherit;
+    
+  }
+
+  .list-nav a:hover{ /*¨como hacer para que no vibre la pantalla al pasar el cursor*/
+    
+    color: rgb(179, 134, 134);
+    font-size: 120%;
+  }
+
+  .list-nav svg{
+    
+    display:flex;
+    fill: white;
+    width: 20px;
+    height: 20px;
+     
+  }
+
+
+
+
+/* MAIN */
+ 
 .main-contenedor{
     display: grid;
     background-color:#d6fbe4;
@@ -92,6 +145,7 @@ a{
 }
 .titulo1 span{
     font-family: 'Handlee', cursive;
+    font-style: italic;
 }
 .formulario1{
     
